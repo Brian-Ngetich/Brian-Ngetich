@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VeloRide — Gallery</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-gallery" data-page="gallery">
+
+<div id="pageBg"></div>
+<div class="grain"></div>
+<div class="toast" id="toast"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo">Velo<span>Ride</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallery.html" class="active">Gallery</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-top">
+  <div>
+    <div class="section-eyebrow">Collection</div>
+    <h1 class="section-title">Our Gallery</h1>
+  </div>
+  <p class="page-desc">Every bicycle in our lineup is crafted for performance and designed to turn heads. Browse all models below.</p>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <button class="filter-btn active" onclick="filterProducts('all', this)">All</button>
+  <button class="filter-btn" onclick="filterProducts('Mountain', this)">Mountain</button>
+  <button class="filter-btn" onclick="filterProducts('Road', this)">Road</button>
+  <button class="filter-btn" onclick="filterProducts('City', this)">City</button>
+</div>
+
+<!-- PRODUCTS GRID -->
+<div class="products-grid" id="productsGrid"></div>
+
+<footer>
+  <div class="footer-logo">Velo<span>Ride</span></div>
+  <div class="footer-copy">© 2025 VeloRide. All rights reserved.</div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  renderAll();
+  initBgCycle();
+  initBgCycle();
+</script>
+</body>
+</html>

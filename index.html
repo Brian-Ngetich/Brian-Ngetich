@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VeloRide — Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-home" data-page="home">
+
+<div id="pageBg"></div>
+<div class="grain"></div>
+<div class="toast" id="toast"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo">Velo<span>Ride</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <span class="hero-badge fu">2026 Collection</span>
+    <h1 class="hero-title fu d1">Ride<br>Beyond<br><span class="hl">Limits</span></h1>
+    <p class="hero-sub fu d2">Precision-engineered bicycles for every terrain. From city commutes to mountain trails.</p>
+    <div class="hero-cta fu d3">
+      <a href="gallery.html" class="btn-primary">Explore Gallery</a>
+      <a href="#featured" class="btn-ghost">Shop Now</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="images/33.jpeg" alt="Hero Bicycle">
+  </div>
+  <div class="hero-scroll"><div class="scroll-line"></div>Scroll to explore</div>
+</div>
+
+<!-- FEATURES STRIP -->
+<div class="features-strip">
+  <div class="feature-item"><span class="feature-num">250+</span><span class="feature-label">Models Available</span></div>
+  <div class="feature-item"><span class="feature-num">15K+</span><span class="feature-label">Happy Riders</span></div>
+  <div class="feature-item"><span class="feature-num">8</span><span class="feature-label">Years of Craft</span></div>
+  <div class="feature-item"><span class="feature-num">100%</span><span class="feature-label">Satisfaction</span></div>
+</div>
+
+<!-- FEATURED PRODUCTS -->
+<div id="featured">
+  <div class="section-header">
+    <div>
+      <div class="section-eyebrow">Featured</div>
+      <h2 class="section-title">Best Sellers</h2>
+    </div>
+    <a href="gallery.html" class="section-link">View All →</a>
+  </div>
+  <div class="products-grid" id="productsGrid"></div>
+</div>
+
+<footer>
+  <div class="footer-logo">Velo<span>Ride</span></div>
+  <div class="footer-copy">&copy;2026 VeloRide. All rights reserved.</div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  renderFeatured();
+  initBgCycle();
+  initBgCycle();
+</script>
+</body>
+</html>
